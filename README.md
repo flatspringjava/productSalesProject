@@ -259,7 +259,7 @@ Team Project
 <!-- CONTACT -->
 ## Contact
 
-Yang Chanyong - wodnjsdl01@gmail.com
+Lee JaeWon - wodnjsdl01@gmail.com
 
 <a href="https://portfolio.flatjava.co.kr/" target="_blank">Portfolio Link</a>
 
