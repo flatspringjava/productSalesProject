@@ -23,13 +23,13 @@
 <br />
 <div align="center">
   <a href="#" target="_blank">
-    <img src="images/logo.png" alt="Logo" width="200">
+    <img src="image/logo.png" alt="Logo" width="200">
   </a>
 
-<h3 align="center">JALADIN</h3>
+<h3 align="center">eats mart</h3>
 
   <p align="center">
-    JAVA 콘솔창을 활용한 미니 프로젝트
+    JAVA 기반 마트 주문 시스템 
     <br>
     <p>작업기간 : 2023.02.03~2023.02.16</p>
     vcs worked on svn
@@ -61,11 +61,9 @@
    <a href="#사용방법">사용방법</a>
      <ul>
       <li><a href="#기능소개">기능소개</a></li>
-      <li><a href="#더미계정">더미계정</a></li>
       <li><a href="#사용방법">사용방법</a></li>
      </ul>
     </li>
-    <li><a href="#요구사항">요구사항</a></li>
     <li><a href="#Collaborator">Collaborator</a></li>
     <li>
        <a href="#Etc">Etc..</a>
@@ -89,7 +87,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="images/4.png" >
+<img src="image/4.png" >
 
 <br>
 JAVA CLI Project <br>
@@ -113,7 +111,7 @@ JAVA 콘솔창을 활용하여 CRUD 구현을 목적으로 작업
 
 #### 저장소 복제
    ```sh
-   git clone https://github.com/yangchanyong/AWS_fullstack_mini_project.git
+   git clone https://github.com/flatspringjava/productSalesProject.git
    ```
 
 ### 설치
@@ -133,34 +131,24 @@ JAVA 콘솔창을 활용하여 CRUD 구현을 목적으로 작업
 #### 기능소개
 <pre>
 기능설명
-1.   일반 회원 :
-    1-1. 회원가입 : id, pw,. 이름, email, 주소, 연락처를 입력하여 회원가입
-    1-2. 추천도서 : 관리자가 입력해놓은 추천도서를 확인
-    1-3. 도서검색 : 도서명, 작가, ISBN으로 도서 검색 및 주문
-    1-4. 장바구니 : 장바구니 상품을 주문 및 삭제
+1.   회원 :
+    1-1. 회원가입 : id, pw, 주소를 입력하여 회원가입
+    1-2. 회원수정 : 회원의 비밀번호를 입력받아 비밀번호, 주소 변경
+    1-3. 회원탈퇴 : 회원의 비밀번호를 입력받아 탈퇴 가능
+    1-4. 로그인 : 회원가입한 아이디, 비밀번호를 입력하여 로그인
+    1-5. 장보기 : 카데고리 -> 상품명 -> 개수를 정수로 입력 
+    1-6. 장바구니 : 장바구니 확인 및 장바구니 상품 제거
+    1-7. 결제 : 장바구니에 있는 상품 명 , 상품 개수 * 가격을 연산해 회원의 자산을 차감
+    1-8. 영수증 조회 : 장보기 완료된 상품의 정보를 조회
     
-2.   출판사  :
-    2-1. 회원가입 : id, pw, 이름, 사업자등록번호 13자리를 입력하여 회원가입
-    2-2. 상품 등록 요청 : ISBN, 제목, 출판사, 작가명, 설명, 가격, 수량을 입력하여 상품 등록 요청
-    2-3. 상품 변경 : ISBN을 입력하여 2-2내용을 수정
+2.   관리자  :    
+    2-1. 회원 리스트 : 회원 번호, ID, PW, 주소를 조회 
 
-
-3. 관리자
-   3-1. 상품 승인: 출판사가 등록 요청한 상품을 isbn을 입력하여 상품을 승인할 수 있다.
-   3-2. 추천도서 수정 : isbn을 입력하여 추천도서를 수정
-   3-3. 주문 확인 : 일반회원이 주문한 상품을 확인하여 배송
-</pre>
-
-#### 더미계정
-<pre>
-1. 일반회원 :   ycy / 1234
-2. 출판사   :   wisdom / 1234
-3. 관리자   :   admin / 1234
 </pre>
 
 #### 사용방법
 <pre>
-root/src/team1/BookStoreEx 실행
+team3/src/main/Main 실행
 </pre>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -168,7 +156,6 @@ root/src/team1/BookStoreEx 실행
 
 
 <!-- ROADMAP -->
-## 요구사항
 
 ### 작업목록
 - [x] 작업완료
@@ -176,28 +163,19 @@ root/src/team1/BookStoreEx 실행
 
 #### 일반 회원
 - [x] 회원가입
-    - [x] 일반사용자 회원가입(id, pw, 이름, email, 연락처, 주소)
-    - [x] 출판사 회원가입 (id, pw, 이름, 사업자등록번호 13자리)
+    - [x] 일반사용자 회원가입(id, pw, 주소)
 - [x] 로그인
-- [ ] 회원상세조회
-- [ ] 회원정보수정
-- [ ] 회원탈퇴
-- [x] 추천도서
-- [x] 도서검색 (1. 도서명, 2. 작가, 3. ISBN)
+- [x] 회원정보수정
+- [x] 회원탈퇴
+- [x] 장보기
 - [x] 장바구니 (목록, 삭제)
-- [x] 책주문
+- [x] 결제
 <br>
-
-#### 출판사
-- [x] 상품등록
-- [x] 상품수정
 
 <br>
 
 #### 관리자
 - [x] 상품승인
-- [x] 추천도서 수정
-- [x] 주문관리
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -206,11 +184,14 @@ Team Project
  <pre>
 공통 : 주제선정, 자료조사
 
-방한솔 : <b>조장</b>, 장바구니, 결제, 주문 <a href="https://github.com/hsnachos" target="_blank">GitHub Link</a>
+박연재 : <b>조장</b>, 장바구니, 결제, 팀원 코드 서포팅 및 피드백
 
-천은경 : 상품크롤링, 상품, 추천도서 <a href="https://github.com/olo02" target="_blank">GitHub Link</a>
+이시화 : Order, Customer CRUD, PPT 제작 
 
-양찬용(본인) : 회원 CRUD <a href="https://github.com/yangchanyong" target="_blank">GitHub Link</a>
+이창용 : Customer-register 기능구현 서포팅
+
+이재원(본인) : Card Service 구현, PPT 발표
+
 
 </pre>
 
@@ -224,32 +205,49 @@ Team Project
 
 <details>
 <summary>PPT Images</summary>
-<img src="images/ppt/1.PNG">
-<img src="images/ppt/2.PNG">
-<img src="images/ppt/3.PNG">
-<img src="images/ppt/4.PNG">
-<img src="images/ppt/5.PNG">
-<img src="images/ppt/6.PNG">
-<img src="images/ppt/7.PNG">
-<img src="images/ppt/8.PNG">
-<img src="images/ppt/9.PNG">
-<img src="images/ppt/10.PNG">
-<img src="images/ppt/11.PNG">
-<img src="images/ppt/12.PNG">
-<img src="images/ppt/13.PNG">
-<img src="images/ppt/14.PNG">
-<img src="images/ppt/15.PNG">
+<img src="image/3Project/Slide1.jpg">
+<img src="image/3Project/Slide2.jpg">
+<img src="image/3Project/Slide3.jpg">
+<img src="image/3Project/Slide4.jpg">
+<img src="image/3Project/Slide5.jpg">
+<img src="image/3Project/Slide6.jpg">
+<img src="image/3Project/Slide7.jpg">
+<img src="image/3Project/Slide8.jpg">
+<img src="image/3Project/Slide9.jpg">
+<img src="image/3Project/Slide10.jpg">
+<img src="image/3Project/Slide11.jpg">
+<img src="image/3Project/Slide12.jpg">
+<img src="image/3Project/Slide13.jpg">
+<img src="image/3Project/Slide14.jpg">
+<img src="image/3Project/Slide15.jpg">
+<img src="image/3Project/Slide16.jpg">
+<img src="image/3Project/Slide17.jpg">
+<img src="image/3Project/Slide18.jpg">
+<img src="image/3Project/Slide19.jpg">
+<img src="image/3Project/Slide20.jpg">
+<img src="image/3Project/Slide21.jpg">
+<img src="image/3Project/Slide22.jpg">
+<img src="image/3Project/Slide23.jpg">
+<img src="image/3Project/Slide24.jpg">
+<img src="image/3Project/Slide25.jpg">
+<img src="image/3Project/Slide26.jpg">
+<img src="image/3Project/Slide27.jpg">
+<img src="image/3Project/Slide28.jpg">
+<img src="image/3Project/Slide29.jpg">
+<img src="image/3Project/Slide30.jpg">
+
 </details>
 
 <br>
 
 ### 프로젝트 후기
 <pre>
-학원 교육과정이 시작하고 약 한달정도 지난 뒤 시작한 프로젝트 입니다.
-실력이 부족하여 남들에게 피해를 줄까봐 구현 시작 전 주제선정, 설계단계에서 열심히 자료조사를 하였습니다.
-열심히 자료조사를 하고 보고를 한 끝에 제가 올린 '인터넷서점'이 주제에 선정되었습니다.
-구현에 많은 어려움이 있었지만 정말 좋은 조장님, 조원분을 만나 싱글톤, 컬렉션 등을 배워 정말 재미있게
-프로젝트를 마무리 할 수 있었고, 프로그래밍에 강한 매력을 느끼게 되었습니다.
+미니 프로젝트고 2주간 진행하다보니 설계 단계에서는 기능을 좀 더 해보고 싶은 욕심이 있었습니다.
+하지만 구현 단계에서 예상보다 난이도가 어려웠다고 생각했습니다.
+
+그래서 프로젝트 기간 객체지향 이론에 대해 많이 공부하면서 차근차근 구현을 시작했습니다.
+배울게 많았고 뜻깊은 시간이었지만 제 미흡한 부분을 팀원들이 채워준 시간에 대해
+많은 미안한 감정들이 남아 있는 프로젝트 였습니다.
 </pre>
 
 
@@ -261,9 +259,9 @@ Team Project
 <!-- CONTACT -->
 ## Contact
 
-Yang Chanyong - cksdyd93@gmail.com
+Yang Chanyong - wodnjsdl01@gmail.com
 
-<a href="https://www.chanyongyang.com" target="_blank">Portfolio Link</a>
+<a href="https://portfolio.flatjava.co.kr/" target="_blank">Portfolio Link</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -272,12 +270,13 @@ Yang Chanyong - cksdyd93@gmail.com
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-이 프로젝트를 사용해주시고 README를 읽어주신 여러분께 대단히 감사합니다!
+읽어주셔서 감사합니다 ^^
 
 ### References
 README Template : [README-Template](https://github.com/othneildrew/Best-README-Template)<br>
-Reference : [알라딘 인터넷서점](https://www.aladin.co.kr/home/welcome.aspx)<br>
-
+Font – 나눔스퀘어, 양진체 (무료 폰트)
+이미지 – 특허청, 배달의 민족
+쿠팡이츠 로고 - https://saltpapa.tistory.com/1591
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
